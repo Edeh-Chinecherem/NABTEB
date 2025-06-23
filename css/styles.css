@@ -1,0 +1,175 @@
+/* Basic Reset & Layout */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  
+}
+.container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  margin: 20px;
+}
+
+/* Sections */
+.left-section {
+  width: 30%;
+  height: 300px;
+  position: relative;
+  
+}
+
+.logo-overlap {
+  position: absolute;
+  top: 40px;     
+  left: 40px;    
+  width: 100px;   
+  z-index: 50;   
+}
+
+.right-section {
+  width: 90%;
+  height: 300px;
+  position: relative;
+
+}
+
+/* Shape Styling */
+.shape-group {
+  position: relative;
+}
+.shape {
+  position: absolute;
+  height: 120px;
+}
+
+/* Clip Paths */
+.clip-left {
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+}
+.clip-left-2 {
+  clip-path: polygon(0 0, 100% 0, 68% 100%, 0% 100%);
+}
+.clip-left-3 {
+  clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+}
+.clip-right {
+  clip-path: polygon(80px 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* Z-Index Classes */
+.z0 { z-index: 0; }
+.z10 { z-index: 10; }
+.z20 { z-index: 20; }
+.z30 { z-index: 30; }
+.z40 { z-index: 40; }
+
+/* Widths */
+.w-256 { width: 256px; }
+.w-240 { width: 240px; }
+.w-224 { width: 224px; }
+.w-30p { width: 30%; }
+.w-full { width: 100%; }
+
+/* Position Helpers */
+.left-0 { left: 0; }
+.left-3 { left: 0.75rem; }
+.left-4 { left: 1rem; }
+.left-16 { left: 4rem; }
+.left-20 { left: 5rem; }
+
+/* Margin */
+.mt-64 { margin-top: 64px; }
+
+/* Color Styles */
+.green-500 { background-color: rgb(148, 188, 59); }
+.green-800 { background-color: rgb(23, 71, 75); }
+.green-700 { background-color: rgb(23, 71, 75); }
+.green-400 { background-color: rgb(170, 200, 102); }
+.green-900-50 { background-color: rgb(181, 209, 124); }
+.green-900-30 { background-color: rgb(149, 188, 61); }
+.green-50-90 { background-color: rgb(243, 248, 242); }
+.green-400-80 { background-color: rgb(149, 188, 61); }
+.green-50-95 { background-color: rgb(243, 248, 242); }
+.green-50 { background-color: rgb(243, 248, 242); }
+
+
+/* Text Styles */
+.text-white { color: white; }
+.text-green-900 { color: #14532d; }
+.text-sm { font-size: 14px; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.text-right { text-align: right; }
+
+/* Utility */
+.shape-content {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.text-box {
+  position: absolute;
+  right: 80px;
+  padding-left: 80px;
+  padding-right: 8px;
+}
+.text-box-second {
+  position: absolute;
+  top: 60px;
+  padding-left: 80px;
+}
+
+document-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 20px 0;
+    text-decoration: underline;
+}
+
+.date {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.content {
+    margin-bottom: 30px;
+}
+
+.salutation {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.paragraph {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.program-info {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.signature {
+    margin-top: 50px;
+}
+
+.signature p {
+    margin: 5px 0;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    font-style: italic;
+    font-size: 14px;
+    border-top: 1px solid #000;
+    padding-top: 10px;
+}
