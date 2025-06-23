@@ -1,18 +1,20 @@
+style.css
 /* Basic Reset & Layout */
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
+  padding: 10px;
   font-family: Arial, sans-serif;
   background-color: #f9fafb;
-  
 }
 .container {
   display: flex;
-  width: 100%;
+  width: 70%;
+  margin: auto;
   overflow: hidden;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 /* Sections */
@@ -20,22 +22,27 @@ body {
   width: 30%;
   height: 300px;
   position: relative;
-  
 }
 
 .logo-overlap {
   position: absolute;
-  top: 40px;     
-  left: 40px;    
-  width: 100px;   
-  z-index: 50;   
+  top: 40px;
+  left: 40px;
+  width: 100px;
+  z-index: 50;
 }
 
 .right-section {
   width: 90%;
   height: 300px;
   position: relative;
+}
 
+.document-section {
+  width: 50%;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 /* Shape Styling */
@@ -62,49 +69,118 @@ body {
 }
 
 /* Z-Index Classes */
-.z0 { z-index: 0; }
-.z10 { z-index: 10; }
-.z20 { z-index: 20; }
-.z30 { z-index: 30; }
-.z40 { z-index: 40; }
+.z0 {
+  z-index: 0;
+}
+.z10 {
+  z-index: 10;
+}
+.z20 {
+  z-index: 20;
+}
+.z30 {
+  z-index: 30;
+}
+.z40 {
+  z-index: 40;
+}
 
 /* Widths */
-.w-256 { width: 256px; }
-.w-240 { width: 240px; }
-.w-224 { width: 224px; }
-.w-30p { width: 30%; }
-.w-full { width: 100%; }
+.w-256 {
+  width: 256px;
+}
+.w-240 {
+  width: 240px;
+}
+.w-224 {
+  width: 224px;
+}
+.w-30p {
+  width: 30%;
+}
+.w-full {
+  width: 100%;
+}
 
 /* Position Helpers */
-.left-0 { left: 0; }
-.left-3 { left: 0.75rem; }
-.left-4 { left: 1rem; }
-.left-16 { left: 4rem; }
-.left-20 { left: 5rem; }
+.left-0 {
+  left: 0;
+}
+.left-3 {
+  left: 0.75rem;
+}
+.left-4 {
+  left: 1rem;
+}
+.left-16 {
+  left: 4rem;
+}
+.left-20 {
+  left: 5rem;
+}
 
 /* Margin */
-.mt-64 { margin-top: 64px; }
+.mt-64 {
+  margin-top: 64px;
+}
 
 /* Color Styles */
-.green-500 { background-color: rgb(148, 188, 59); }
-.green-800 { background-color: rgb(23, 71, 75); }
-.green-700 { background-color: rgb(23, 71, 75); }
-.green-400 { background-color: rgb(170, 200, 102); }
-.green-900-50 { background-color: rgb(181, 209, 124); }
-.green-900-30 { background-color: rgb(149, 188, 61); }
-.green-50-90 { background-color: rgb(243, 248, 242); }
-.green-400-80 { background-color: rgb(149, 188, 61); }
-.green-50-95 { background-color: rgb(243, 248, 242); }
-.green-50 { background-color: rgb(243, 248, 242); }
-
+.green-500 {
+  background-color: rgb(148, 188, 59);
+}
+.green-800 {
+  background-color: rgb(23, 71, 75);
+}
+.green-700 {
+  background-color: rgb(23, 71, 75);
+}
+.green-400 {
+  background-color: rgb(170, 200, 102);
+}
+.green-900-50 {
+  background-color: rgb(181, 209, 124);
+}
+.green-900-30 {
+  background-color: rgb(149, 188, 61);
+}
+.green-50-90 {
+  background-color: rgb(243, 248, 242);
+}
+.green-400-80 {
+  background-color: rgb(149, 188, 61);
+}
+.green-50-95 {
+  background-color: rgb(243, 248, 242);
+}
+.green-50 {
+  background-color: rgb(243, 248, 242);
+}
 
 /* Text Styles */
-.text-white { color: white; }
-.text-green-900 { color: #14532d; }
-.text-sm { font-size: 14px; }
-.font-medium { font-weight: 500; }
-.font-semibold { font-weight: 600; }
-.text-right { text-align: right; }
+.text-white {
+  color: white;
+}
+.text-green-900 {
+  color: #14532d;
+}
+.text-green {
+  color: rgb(148, 188, 59);
+}
+.text-sm {
+  font-size: 14px;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.text-right {
+  text-align: right;
+}
+.text-big {
+  font-size: x-large;
+}
 
 /* Utility */
 .shape-content {
@@ -122,54 +198,174 @@ body {
 .text-box-second {
   position: absolute;
   top: 60px;
+  right: 20px;
   padding-left: 80px;
 }
 
-document-title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    margin: 20px 0;
-    text-decoration: underline;
+.document-title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 16px;
+  margin: 20px 0;
+  text-decoration: underline;
+  font-size: x-large;
 }
 
 .date {
-    text-align: right;
-    margin-bottom: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.passport-container {
+  text-align: right;
+   }
+
+.passport {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+    border: 15px solid  rgb(149, 188, 61); /* Wood-like brown */
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .content {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .salutation {
-    font-weight: bold;
-    margin-bottom: 15px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .paragraph {
-    margin-bottom: 15px;
-    text-align: justify;
+  margin-bottom: 15px;
+  text-align: justify;
 }
 
 .program-info {
-    margin-left: 30px;
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .signature {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .signature p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
+.signature-box {
+  width: 150px;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.signature-box .line {
+  border-bottom: 2px solid #000;
+  height: 1px;
+  margin-bottom: 4px;
+}
+
+
 .footer {
-    text-align: center;
-    margin-top: 50px;
-    font-style: italic;
-    font-size: 14px;
-    border-top: 1px solid #000;
-    padding-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+  font-style: italic;
+  font-size: 14px;
+  border-top: 1px solid #000;
+  padding-top: 10px;
+  width: 50%;
+  margin: auto;
+  color: rgb(148, 188, 59)
+}
+
+.footer-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 30px;
+  background-color: rgb(148, 54, 52);
+}
+
+.footer-text {
+  flex: 1;
+}
+
+.montserrat-head {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.source-serif-4-title {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
